@@ -30,6 +30,9 @@ nav :hover {
 
 }
 
+nav :hover {
+    background-color: #575757;
+}
 
 
 main {

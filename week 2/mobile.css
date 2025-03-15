@@ -12,7 +12,7 @@ body {
 
 nav {
     display: none;
-    background-color: yellow;
+    background-color: #D69F7E;
     position: fixed;
     top: 0;
     left: 50%;
@@ -33,9 +33,12 @@ nav {
 .showNav::before {
     content: "";
     position: absolute;
+    display: block;
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
+
+    
 }
 
 #clicked:target nav {
@@ -49,6 +52,7 @@ nav {
 
 #clicked .off {
     display: none;
+    color: #f5d0c5
     
 }
 
@@ -60,5 +64,6 @@ nav {
 
 #clicked:target .off {
     display: block;
+    color: #f5d0c5
     
 }
