@@ -1,3 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+}
+
 header {
     background-color: #F5D0C5;
     color: white;
@@ -6,7 +17,7 @@ header {
     text-align: center;
 }
 
-nav {
+nav  {
     background-color: #D69F7E;
     padding: 10px 15px;
     justify-content: space-around;
@@ -24,38 +35,13 @@ nav a {
     transition: background-color 0.3s;
   }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
-}
 
-nav > ul > li {
-    position: relative;
-    width: 100%;
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: green;
-    width: 100%;
-    padding: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-    pointer-events: none;
-}
-
-nav > ul > li:hover ul {
+nav :hover {
     opacity: 1;
     pointer-events: auto;
 }
 
-nav ul ul li:hover {
+nav :hover {
     background-color: #575757;
 }
 
@@ -76,13 +62,3 @@ footer {
     grid-area: footer;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "footer footer footer"
-}
