@@ -1,5 +1,5 @@
 header {
-    background-color: #F5D0C5;
+    background-color: #8b575c;
     color: white;
     padding: 20px;
     grid-area: header;
@@ -36,9 +36,9 @@ nav :hover {
 
 
 main {
-    background-color: darkblue;
-    color: white;
+    background-color: #f6e4f6;
     grid-area: main;
+    width: 100px 100px;
 }
 
 aside {
@@ -47,7 +47,7 @@ aside {
 }
 
 footer {
-    background-color: darkgreen;
+    background-color: #f6e4f6;
     color: white;
     grid-area: footer;
 }
