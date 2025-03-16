@@ -20,10 +20,34 @@ nav {
     height: 100vh;
 }
 
+aside {
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: white;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+aside a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}
+aside a:hover {
+    background: #575757;
+}
+
+
 .showNav {
+    display: flex;
+    flex-direction: column;
     height: 0.8em;
     width: 1.25em;
-    display: block;
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
 
@@ -33,7 +57,8 @@ nav {
 .showNav::before {
     content: "";
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
@@ -42,17 +67,19 @@ nav {
 }
 
 #clicked:target nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #clicked .on {
-    display: block;
+    display: flex;
+    flex-direction: column;
     
 }
 
 #clicked .off {
     display: none;
-    color: #f5d0c5
+    
     
 }
 
@@ -63,7 +90,7 @@ nav {
 }
 
 #clicked:target .off {
-    display: block;
-    color: #f5d0c5
+    display: flex;
+    
     
 }

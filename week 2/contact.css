@@ -1,11 +1,13 @@
 body {
     display: grid;
+    grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
+    text-align: center;
     grid-template-areas:
-        "header"
-        "nav "
-        "main"
-        "footer"
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
 }
 
 header {
@@ -44,10 +46,45 @@ nav :hover {
     background-color: #575757;
 }
 
-main {
-    background-color: #f6e4f6;
+form {
+    grid-area: main;
+    display: grid;
+    justify-content: right;
+    margin: 100px auto;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    row-gap: 0.5em;
+    height: 350px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid black;
+  }
+
+
+textarea {
+    height: 5em;
 }
+
+main {
+    font-size: 15px;
+    background-color: #F6BDD1;
+    align-items: center;
+    justify-content: center;
+    grid-area: main;
+}
+
+h2 {
+    grid-area: h2;
+    padding: 18px;
+    text-align: center;
+    font-size: 3.2em;
+    background-color: #F6BDD1;
+}
+
+
 
 footer {
     background-color: #f6e4f6;
+    text-align: center;
+    grid-area: footer;
 }

@@ -46,14 +46,16 @@ nav :hover {
 }
 
 main {
-    background-color: #f6e4f6;
+    background-color: #F6BDD1;
     grid-area: main;
+    padding-bottom: 670px;
 }
 
-aside {
-    background-color: lightgreen;
-    grid-area: aside;
-}
+img {
+    width: 400px;
+    height: 300px;
+  }
+
 
 footer {
     background-color: #f6e4f6;

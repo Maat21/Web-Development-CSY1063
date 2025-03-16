@@ -1,3 +1,14 @@
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+}
+
 header {
     background-color: #8b575c;
     color: white;
@@ -36,9 +47,10 @@ nav :hover {
 
 
 main {
-    background-color: #f6e4f6;
+    background-color: #F6BDD1;
     grid-area: main;
     width: 100px 100px;
+    padding-bottom: 670px;
 }
 
 aside {
@@ -52,12 +64,3 @@ footer {
     grid-area: footer;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header"
-        "main nav aside"
-        "footer footer footer"
-}
