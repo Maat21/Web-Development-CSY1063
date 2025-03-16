@@ -59,7 +59,7 @@ img {
 
 footer {
     background-color: #f6e4f6;
-    color: white;
     grid-area: footer;
+    text-align: center;
 }
 

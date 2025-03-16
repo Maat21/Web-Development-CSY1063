@@ -5,7 +5,7 @@ body {
     grid-template-areas:
         "header header header"
         "nav nav nav"
-        "main main main"
+        "aside main main"
         "footer footer footer"
 }
 
@@ -48,19 +48,23 @@ nav :hover {
 
 main {
     background-color: #F6BDD1;
+    text-align: center;
+    font-size: large;
     grid-area: main;
     width: 100px 100px;
     padding-bottom: 670px;
 }
 
 aside {
-    background-color: lightgreen;
+    background-color: #A6979C;
     grid-area: aside;
+    text-align: center;
+    font-size: 2em;
 }
 
 footer {
     background-color: #f6e4f6;
-    color: white;
     grid-area: footer;
+    text-align: center;
 }
 
