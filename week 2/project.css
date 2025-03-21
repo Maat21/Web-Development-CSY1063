@@ -47,14 +47,15 @@ nav :hover {
 
 main {
     background-color: #F6BDD1;
+    display: grid;
     grid-area: main;
     padding-bottom: 670px;
 }
 
-img {
+div img {
     width: 400px;
     height: 300px;
-  }
+}
 
 
 footer {
@@ -62,4 +63,5 @@ footer {
     grid-area: footer;
     text-align: center;
 }
+
 

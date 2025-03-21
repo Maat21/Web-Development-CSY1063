@@ -5,8 +5,8 @@ body {
     grid-template-areas:
         "header "
         "nav" 
-        "main" 
         "aside"
+        "main" 
         "footer"
 }
 
@@ -18,29 +18,16 @@ nav {
     left: 50%;
     width: 50%;
     height: 100vh;
+    transition: margin-right 0.5s;
 }
 
 aside {
-    width: 250px;
-    height: 100vh;
-    background: #333;
-    color: white;
-    position: fixed;
-    left: -250px;
-    top: 0;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-aside a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
+    background-color: #A6979C;
+    grid-area: aside;
     text-align: center;
+    font-size: 2em;
 }
-aside a:hover {
-    background: #575757;
-}
+
 
 
 .showNav {
@@ -50,7 +37,7 @@ aside a:hover {
     width: 1.25em;
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
-
+    transition: margin-right 0.5s;
     border-radius: 0.2em;
 }
 
@@ -62,6 +49,7 @@ aside a:hover {
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
+    transition: margin-right 0.5s;
 
     
 }
@@ -69,11 +57,13 @@ aside a:hover {
 #clicked:target nav {
     display: flex;
     flex-direction: column;
+    transition: margin-right 0.5s;
 }
 
-#clicked .on {
+#clicked .showNav {
     display: flex;
     flex-direction: column;
+    transition: margin-right 0.5s;
     
 }
 
@@ -86,6 +76,7 @@ aside a:hover {
 
 #clicked:target .on {
     display: none;
+    transition: margin-right 0.5s;
     
 }
 

@@ -55,6 +55,12 @@ main {
     padding-bottom: 670px;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 6px;
+}
+
 aside {
     background-color: #A6979C;
     grid-area: aside;
