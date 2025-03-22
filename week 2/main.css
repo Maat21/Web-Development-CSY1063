@@ -52,7 +52,13 @@ main {
     font-size: large;
     grid-area: main;
     width: 100px 100px;
-    padding-bottom: 670px;
+    padding-bottom: 300px;
+}
+
+li::first-letter {
+    font-weight: bold;
+    color: darkmagenta;
+    font-size: 1em;
 }
 
 img {
@@ -65,7 +71,7 @@ aside {
     background-color: #A6979C;
     grid-area: aside;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 footer {
@@ -74,3 +80,49 @@ footer {
     text-align: center;
 }
 
+main > img {
+    width: 15em;
+    float: middle;
+    animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0,0);
+        }
+    25% {
+        transform: translate(-3vh, 4vh);
+    }
+    50% {
+        transform: translate(0vh, 8vh);
+        }
+    100% {
+        transform: translate(0,0);
+        }
+        
+  }
+
+#subaru {
+    
+    left: 270px;
+    width: 15em;
+    height: 26.7em;
+    animation: move_2 5s ease-in-out infinite;
+
+}
+
+@keyframes move_2 {
+    0% {
+        transform: translate(0,0);
+        }
+    25% {
+        transform: translate(3vh, 4vh);
+    }
+    50% {
+        transform: translate(0vh, 8vh);
+        }
+    100% {
+        transform: translate(0,0);
+        }
+        
+  }
