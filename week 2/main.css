@@ -51,7 +51,6 @@ main {
     text-align: center;
     font-size: large;
     grid-area: main;
-    width: 100px 100px;
     padding-bottom: 300px;
 }
 
@@ -82,7 +81,7 @@ footer {
 
 main > img {
     width: 15em;
-    float: middle;
+    float: none;
     animation: move 5s ease-in-out infinite;
 }
 
