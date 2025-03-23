@@ -50,10 +50,10 @@ main {
     background-color: #F6BDD1;
     grid-area: main;
     text-align: center;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 
-iframe {
+.videoo {
     grid-area: main;
     justify-content: center;
     place-content: center;
